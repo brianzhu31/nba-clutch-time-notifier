@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NBA Clutch Time Notifier</title>
+    <script type="module" defer src="popup.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="popup-container">
+      <div class="heading-container">
+        <div class="logo-container">
+          <img src="icon.png">
+        </div>
+        <h2>NBA Clutch Time Notifier</h2>
+      </div>
+      <div class="dropdown">
+        <button id="dropdownButton" class="dropbtn">Select Teams</button>
+        <div id="checkboxes" class="dropdown-content">
+          <!-- CONTENT HERE RENDERED BY JS -->
+        </div>
+      </div>
+      <div class="bottom-container">
+        <h2>Notify when</h2>
+        <div class="time-select-container">
+          <h3>Remaining time in 4th quarter</h3>
+          <div class="slider-container">
+            <div class="slider-container">
+              <input type="range" min="1" max="12" value="6" class="slider" id="time-slider">
+              <p>Minutes: <span id="time-value">6</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="diff-select-container">
+          <h3>Score differential</h3>
+          <div class="slider-container">
+            <div class="slider-container">
+              <input type="range" min="0" max="20" value="10" class="slider" id="diff-slider">
+              <p>Difference: <span id="diff-value">10</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
