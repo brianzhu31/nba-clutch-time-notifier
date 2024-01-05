@@ -5,8 +5,6 @@ chrome.runtime.onStartup.addListener(keepAlive);
 keepAlive();
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ 'checkboxState': {} });
-
   startNotifications()
 
 });
