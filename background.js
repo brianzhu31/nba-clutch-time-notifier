@@ -13,17 +13,16 @@ chrome.runtime.onStartup.addListener(() => {
   startNotifications()
 })
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.action === 'getCheckboxState') {
-    chrome.storage.sync.get('checkboxState', (data) => {
-      sendResponse(data.checkboxState || {});
-    });
-    return true;
-  } else if (request.action === 'setCheckboxState') {
-    chrome.storage.sync.set({ 'checkboxState': request.checkboxState });
-  }
-});
-
+// chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+//   if (request.action === 'getCheckboxState') {
+//     chrome.storage.sync.get('checkboxState', (data) => {
+//       sendResponse(data.checkboxState || {});
+//     });
+//     return true;
+//   } else if (request.action === 'setCheckboxState') {
+//     chrome.storage.sync.set({ 'checkboxState': request.checkboxState });
+//   }
+// });
 
 
 function startNotifications() {
