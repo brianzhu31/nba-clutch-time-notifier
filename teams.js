@@ -29,7 +29,7 @@ const teams = [
   },
   {
     "teamId": 1610612741,
-    "abbreviation": "CHI", 
+    "abbreviation": "CHI", //*
     "teamName": "Chicago Bulls",
     "simpleName": "Bulls",
     "location": "Chicago"
@@ -64,7 +64,7 @@ const teams = [
   },
   {
     "teamId": 1610612744,
-    "abbreviation": "GSW",
+    "abbreviation": "GS", //*
     "teamName": "Golden State Warriors",
     "simpleName": "Warriors",
     "location": "Golden State"
@@ -99,7 +99,7 @@ const teams = [
   },
   {
     "teamId": 1610612763,
-    "abbreviation": "MEM",
+    "abbreviation": "MEM", //*
     "teamName": "Memphis Grizzlies",
     "simpleName": "Grizzlies",
     "location": "Memphis"
@@ -155,7 +155,7 @@ const teams = [
   },
   {
     "teamId": 1610612755,
-    "abbreviation": "PHI",
+    "abbreviation": "PHI", //*
     "teamName": "Philadelphia 76ers",
     "simpleName": "76ers",
     "location": "Philadelphia"
@@ -204,7 +204,7 @@ const teams = [
   },
   {
     "teamId": 1610612764,
-    "abbreviation": "WAS", //*
+    "abbreviation": "WSH", //*
     "teamName": "Washington Wizards",
     "simpleName": "Wizards",
     "location": "Washington"
