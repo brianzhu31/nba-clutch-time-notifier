@@ -41,6 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
     chrome.storage.sync.set({ checkboxState: checkboxState });
   }
 
+  function resetNotifiedTeams() {
+    chrome.storage.sync.get("notifiedTeamsState", function (data) {
+      let notifiedTeams = data.notifiedTeamsState || {}
+
+      console.log(notifiedTeams)
+
+      for(let team in notifiedTeams) {
+        notifiedTeams[team] = false
+      }
+
+      chrome.storage.sync.set({notifiedTeamsState: notifiedTeams})
+
+      console.log(notifiedTeams)
+      
+    });
+  }
+
 
   const timeSlider = document.getElementById("time-slider");
   const timeSliderValue = document.getElementById("time-value");
@@ -64,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let timeState = {}
     timeState['value'] = timeSlider.value
     chrome.storage.sync.set({ timeState: timeState})
+    resetNotifiedTeams()
   }
 
   // Function to update value
@@ -101,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let diffState = {}
     diffState['value'] = diffSlider.value
     chrome.storage.sync.set({ diffState: diffState})
+    resetNotifiedTeams()
   }
 
   // Function to update value
