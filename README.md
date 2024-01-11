@@ -1,5 +1,7 @@
 # NBA Clutch Time Notifier
 
+![alt text](app-image.png)
+
 Provides real-time notifications for close and competitive NBA games in the final quarter
 
 Don't have the time to watch full NBA games but also don't want to miss the thrilling endings of close matches? NBA Clutch Time Notifier will always alert you about live games that become close in the 4th quarter. Users can select teams to receive notifications from and adjust parameters that control their notifications. Alerts will pop up in the corner of the screen as a chrome notification.
