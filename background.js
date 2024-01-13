@@ -13,18 +13,6 @@ chrome.runtime.onStartup.addListener(() => {
   startNotifications()
 })
 
-// chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-//   if (request.action === 'getCheckboxState') {
-//     chrome.storage.sync.get('checkboxState', (data) => {
-//       sendResponse(data.checkboxState || {});
-//     });
-//     return true;
-//   } else if (request.action === 'setCheckboxState') {
-//     chrome.storage.sync.set({ 'checkboxState': request.checkboxState });
-//   }
-// });
-
-
 function startNotifications() {
   notificationInterval = setInterval(makeAPICall, 60000); // 60 seconds interval
 }
@@ -103,7 +91,7 @@ function makeAPICall() {
                       if (diff <= diffMax) {
                         const notificationOptions = {
                           type: "basic",
-                          iconUrl: "nba-icon.png",
+                          iconUrl: "/images/nba-icon.png",
                           title: gameData.status.type.detail,
                           message:
                             team1.displayName +
