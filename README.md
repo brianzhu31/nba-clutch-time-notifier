@@ -1,6 +1,6 @@
 # NBA Clutch Time Notifier
 
-![alt text](app-image.png)
+![alt text](/images/app-image.png)
 
 Provides real-time notifications for close and competitive NBA games in the final quarter
 
